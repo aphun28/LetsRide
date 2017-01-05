@@ -1,0 +1,79 @@
+
+List of session variables available for Rider and Driver
+via PHP global variable $_SESSION.
+
+============================================================
+Rider Session Variables
+
+----- Logged In
+$_SESSION['customer_id'] = $row['customer_id'];
+$_SESSION['customer_first_name'] = $row['first_name'];
+$_SESSION['customer_last_name'] = $row['last_name'];
+$_SESSION['customer_email'] = $row['email'];
+$_SESSION['customer_phone_number'] = $row['phone_number'];
+$_SESSION['customer_balance'] = $row['balance'];
+$_SESSION['customer_picture'] = $row['picture'];
+$_SESSION['agent'] = md5($_SERVER['HTTP_USER_AGENT']);
+
+----- Request Accepted by a Driver
+$_SESSION['driver_info'] = array(
+  "id" => $networkRow['driver_id'],
+  "driverLat" => $networkRow['driver_lat'],
+  "driverLng" => $networkRow['driver_lng'],
+  "pickupLat" => $networkRow['pickup_lat'],
+  "pickupLng" => $networkRow['pickup_lng'],
+  "pickupAddr" => $networkRow['pickup_addr'],
+  "destLat" => $networkRow['dest_lat'],
+  "destLng" => $networkRow['dest_lng'],
+  "destAddr" => $networkRow['dest_addr'],
+  "name" => $driverRow['first_name'] . ' ' . $driverRow['last_name'],
+  "firstName" => $driverRow['first_name'],
+  "lastName" => $driverRow['last_name'],
+  "phoneNumber" => $driverRow['phone_number'],
+  "picture" => $driverRow['picture'],
+  "avgRating" => $ratingRow['avg_stars'],
+  "vehiclePlate" => $vehicleRow['license_plate'],
+  "vehicleInfo" => $vehicleRow['make'] . ' ' . $vehicleRow['model'],
+  "vehicleMake" => $vehicleRow['make'],
+  "vehicleModel" => $vehicleRow['model'],
+  "vehicleColor" => $vehicleRow['color'],
+);
+
+----- Confirmed Pickup
+$_SESSION['ride_id']
+
+
+============================================================
+Driver Session Variables
+
+----- Logged In
+$_SESSION['driver_id'] = $row['driver_id'];
+$_SESSION['driver_first_name'] = $row['first_name'];
+$_SESSION['driver_last_name'] = $row['last_name'];
+$_SESSION['driver_email'] = $row['email'];
+$_SESSION['driver_phone_number'] = $row['phone_number'];
+$_SESSION['driver_balance'] = $row['balance'];
+$_SESSION['driver_picture'] = $row['picture'];
+$_SESSION['driver_vehicle_id'] = $row['vehicle_id'];
+$_SESSION['agent'] = md5($_SERVER['HTTP_USER_AGENT']);
+
+----- Accepted Request by Customer
+$_SESSION['customer_info'] = array(
+  "id" => $networkRow['customer_id'],
+  "pickupLat" => $networkRow['pickup_lat'],
+  "pickupLng" => $networkRow['pickup_lng'],
+  "pickupAddr" => $networkRow['pickup_addr'],
+  "destLat" => $networkRow['dest_lat'],
+  "destLng" => $networkRow['dest_lng'],
+  "destAddr" => $networkRow['dest_addr'],
+  "name" => $customerRow['first_name'] . ' ' . $customerRow['last_name'],
+  "firstName" => $customerRow['first_name'],
+  "lastName" => $customerRow['last_name'],
+  "phoneNumber" => $customerRow['phone_number'],
+  "picture" => $customerRow['picture'],
+  "avgRating" => $ratingRow['avg_stars'],
+);
+
+----- Confirmed Pickup
+$_SESSION['ride_id']
+  

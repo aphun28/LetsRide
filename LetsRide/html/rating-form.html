@@ -1,0 +1,54 @@
+<div id="ratingMain">
+  <h1 class="rating-header">How was your ride?</h1>
+    <form id="ratingForm">
+      <div class="form-group">
+        <div class="rating-selector">
+          <input type="radio" name="ratingFormStars" id="option1" value="1">
+          <label class="radio-inline rating-block" for="option1">
+            <img class="rating-image img-responsive" src="images/stars1.png" alt="1 Star" />
+            <p>WTF</p>
+          </label>
+
+          <input type="radio" name="ratingFormStars" id="option2" value="2">
+          <label class="radio-inline rating-block" for="option2">
+            <img class="rating-image img-responsive" src="images/stars2.png" alt="2 Stars" />
+            <p>Meh</p>
+          </label>
+
+          <input type="radio" name="ratingFormStars" id="option3" value="3">
+          <label class="radio-inline rating-block" for="option3">
+            <img class="rating-image img-responsive" src="images/stars3.png" alt="3 Stars" />
+            <p>OK</p>
+          </label>
+          
+          <input type="radio" name="ratingFormStars" id="option4" value="4">
+          <label class="radio-inline rating-block" for="option4">
+            <img class="rating-image img-responsive" src="images/stars4.png" alt="4 Stars" />
+            <p>Nice</p>
+          </label>
+
+          <input type="radio" name="ratingFormStars" id="option5" value="5">
+          <label class="radio-inline rating-block" for="option5">
+            <img class="rating-image img-responsive" src="images/stars5.png" alt="5 Stars" />
+            <p>Awesome</p>
+          </label>
+        </div>
+        <!--<select id="ratingFormStars" class="form-control">
+          <option selected disabled>Select a Rating</option>
+          <option value="1">1 - Horrible</option>
+          <option value="2">2 - Bad</option>
+          <option value="3">3 - Ok, I guess</option>
+          <option value="4">4 - Nice!</option>
+          <option value="5">5 - Best. Experience. Ever!</option>
+        </select>-->
+      </div>
+      <div class="form-group">
+        <textarea id="ratingFormComments" class="form-control" rows="3" cols="35" maxlength="200" placeholder="Enter optional comments here"></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submitRatingBtn" type="button" class="btn btn-primary btn-block">
+          Submit Rating
+        </button>
+      </form>
+  </form>
+ </div>

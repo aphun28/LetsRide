@@ -1,0 +1,41 @@
+/**
+  Register Stylesheet
+*/
+
+#registerRiderPage, #registerDriverPage, #registerSuccessPage {
+  background: url("../images/reg-bg-opt.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.reg-title {
+  margin-bottom: 1em;
+}
+
+.reg-container {
+  width: 40%;
+  min-width: 500px;
+  margin: 5em auto;
+  padding: 3em;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* shadows and rounded borders */
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.reg-form-error {
+  color: red;
+}
+
+.reg-divider {
+  margin: 2em 0;
+  width: 100%;
+  height: 1px;
+  border: 1px solid gray;
+}

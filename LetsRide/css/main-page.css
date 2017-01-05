@@ -1,0 +1,152 @@
+/**
+  Main Driver/Rider Stylesheet
+*/
+
+/* COMPONENTS */
+.main-profile-image {
+  width: 150px;
+  height: 150px;
+}
+
+.status-bar {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  line-height:50px;
+  background-color:#99cb99;
+  text-align: center;
+  font-size:1.2em
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0.1; } 
+}
+
+.animate-flicker {
+    animation: fadeIn 1s infinite alternate;
+}
+
+/* LOADING */
+#loading {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: #EEE;
+}
+
+#loading p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 2em;
+}
+
+#loadingLogo {
+  width: 200px;
+  height: auto;
+}
+
+/* SIDEBAR */
+.sidebar-title {
+  margin-bottom: 1.5em;
+}
+
+/* MAIN CONTENT */
+#mainContainer .container-fluid, #mainContainer .row {
+  height: 100%;
+}
+
+#mainRight {
+  height: 100%;
+  padding: 0;
+}
+
+#mapCanvas {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* RATING */
+#ratingMain {
+  margin: 0 2em auto;
+  text-align: center;
+}
+
+.rating-header {
+  margin-bottom: 1em;
+}
+
+.rating-image {
+  width: inherit;
+  height: 100px;
+}
+
+.rating-block p {
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+.rating-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.rating-selector input:active +.rating-block{opacity: .9;}
+.rating-selector input:checked +.rating-block{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+
+.rating-block {
+  cursor: pointer;
+  width: 100px;
+  height: 150px;
+  /*background-color: red;*/
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  margin-right: 2em;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+  -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+  filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.rating-block:hover{
+  -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* PROFILE */
+.profile-header {
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: #99cb99;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 50px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.profile-header:hover {
+  background-color: #444;
+  text-decoration: none;
+}

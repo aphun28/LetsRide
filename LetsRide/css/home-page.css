@@ -1,0 +1,95 @@
+/**
+  Homepage Stylesheet
+ */
+
+/* IMAGE */
+#homePage #homeBanner {
+  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) ), url("../images/home-bg-opt.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+	height: 100vh;
+  text-align: center;
+}
+
+/* HEADER */
+#homePage #homeHeader {
+  width: 100%;
+  height: 33%;
+}
+
+.home-app-name {
+  margin: 0;
+  padding: 0.5em;
+  font-size: 5em;
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: 0 0 #000;
+}
+
+.home-app-desc {
+  margin: 0;
+  text-shadow: 2px 2px 10px #EEE;
+}
+
+#homePage .row {
+  margin: 0;
+}
+
+/* ACCOUNT */
+#homePage #homeAccount {
+  padding-top: 5em;
+  width: 100%;
+  height: 67%;
+}
+
+#homePage .home-login-button {
+  width: 50%;
+  padding: 1em;
+  margin: 1em;
+}
+
+#homePage #homeAccount a {
+  text-shadow: 2px 2px 5px #333;
+}
+
+/* MAIN CONTENT */
+#homePage #home-main-content {
+  margin: 3em;
+}
+
+#homePage section {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#homePage .section-title {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#homePage .section-subtitle {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#homePage .why-icon {
+  margin-top: 1em;
+  margin-bottom: 200px;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#homePage footer {
+  clear: both;
+  width: 100%;
+  margin-top: 1em;
+  padding: 2em;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: #99CB99;
+}
