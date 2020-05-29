@@ -179,7 +179,6 @@ Since location is tracked real-time, location spoofing must be done to simulate 
 * [Chrome Geolocation Sensor](https://developers.google.com/web/tools/chrome-devtools/device-mode/device-input-and-sensors) (_Recommended_)
 * Firefox - No tested method.
 
-
 # Troubleshooting
 
 ### Issues with XAMPP
@@ -188,13 +187,6 @@ Since location is tracked real-time, location spoofing must be done to simulate 
 
 ### Other Issues 
 Check for any error messages or the Console.
-
-# Video Guides
-Includes usage and installation walkthrough.
-
-* [Usage Video](https://drive.google.com/file/d/0B36mDZzEDFp9Yl92eE84THB0SDQ/view)
-* [Installation Video](https://drive.google.com/file/d/0Bx3MtGgovS2JdnVLSzNWeVZGRFk/view)
-
 
 # Miscellaneous
 ### Development Stack
